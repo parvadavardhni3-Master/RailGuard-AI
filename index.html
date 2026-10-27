@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RailGuard AI | Safety Monitoring Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="eyebrow">RAILWAY CROSSING SAFETY • PROTOTYPE</div><h1>RailGuard AI</h1><p>Intelligent danger-zone monitoring — simulated demo</p></header>
+  <main>
+    <section class="status-grid">
+      <article class="panel"><span class="muted">Gate status</span><h2 id="gateStatus">CLOSED</h2><p>Demo state</p></article>
+      <article class="panel"><span class="muted">Latest detection</span><h2 id="latestDetection">Pedestrian</h2><p>Sample event</p></article>
+      <article class="panel alert"><span class="muted">Safety alert</span><h2 id="alertStatus">ALERT</h2><p id="alertMessage">Unsafe entry simulated</p></article>
+    </section>
+    <section class="panel"><div class="section-head"><h2>Detection event log</h2><button id="simulateBtn">Simulate next event</button></div><div id="events" class="events"></div></section>
+    <p class="notice"><strong>Important:</strong> This is a sample-data demonstration, not a real detection or railway control system. Never use it to make operational safety decisions.</p>
+  </main>
+  <footer>RailGuard AI • Team HSC|TN|03285 • Educational prototype</footer>
+  <script src="app.js"></script>
+</body>
+</html>
